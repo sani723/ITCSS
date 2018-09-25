@@ -1,0 +1,15 @@
+/* These are element styles — no classes or IDs. 
+  anything needed to style raw elements.
+*/
+html, body {
+    background-color: #fff;
+}
+li {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+}
+svg {
+    margin-right: 10px;
+}

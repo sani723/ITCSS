@@ -1,0 +1,23 @@
+.ratings {
+    @extend %equal-padding;
+    display: flex;
+    justify-content: space-between;
+    &__item {
+        font-size: $primary-font-size - 4;
+        display: flex;
+        flex-direction: column;
+        span {
+            padding-bottom: 3px;
+            display: inline-block;
+        }
+    }
+    &__value {
+        color: rgba(0,0,0,.87);
+        font-size: $primary-font-size;
+        line-height: 21px;
+        margin-top: -4px;
+    }
+    &__source {
+        color: #1967D2;
+    }
+}

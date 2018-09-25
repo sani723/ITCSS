@@ -1,0 +1,19 @@
+// Includes all mixins, functions & extend/inheritance
+%equal-padding {
+    padding: 10px 16px;
+}
+%gallery-hoz-common {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: hidden;
+}
+@function getFontSize($font-size,$opt) {
+	@if($opt=="l") {
+		@return unquote(($primary-font-size + $font-size) + 'px');
+	}
+	@else {
+		@return unquote(($primary-font-size - $font-size) + 'px');
+	}
+}

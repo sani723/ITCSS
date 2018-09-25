@@ -1,0 +1,34 @@
+.movie {
+    padding: 10px 10px 15px 24px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    background-color: $primary-bg-color;
+    font-size: $primary-font-size;
+    &__title {
+        padding: 6px 0 0;
+        font-weight: bold;
+    }
+    &__meta {
+        color: rgba(255,255,255,.7);
+        padding: 6px 0 0;
+        font-size: $primary-font-size - 4;
+    }
+    &__plot {
+        @extend %equal-padding;
+        color: #3C4043;
+        line-height: 20px;
+        font-size: $primary-font-size - 2;
+    }
+    &__detail {
+        a {
+            text-align: center;
+            padding: 15px 0;
+            display: block;
+            color: #1A73E8;
+            font-weight: bold;
+            font-size: $primary-font-size - 4;
+            text-transform: uppercase;
+        }
+    }
+}

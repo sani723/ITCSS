@@ -1,0 +1,21 @@
+.social-sharing {
+    position: absolute;
+    top: 30px;
+    right: 8px;
+    color: #ccc;
+    background-color: #fff;
+    min-width: 100px;
+    padding: 3px 10px;
+    display: none;
+    z-index: 2;
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,.1);
+    span {
+        display: block;
+        padding: 8px 24px 15px 12px;
+        color: rgba(0,0,0,.54);
+        cursor: pointer;
+    }
+}
+.active {
+    display: block;
+}

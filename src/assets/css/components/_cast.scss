@@ -1,0 +1,60 @@
+.cast {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 30%;
+    width: 112px;
+    float: left;
+    margin: 8px 4px 0;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    &__thumb {
+        img {
+            width: 100%;
+        }
+    }
+    &__name {
+        min-height: 25px;
+        padding: 7px 8px;
+        font-size: $primary-font-size - 3;
+    }
+    &-gallery {
+        @extend %gallery-hoz-common;
+        margin-bottom: -3px;
+        &__item {
+            flex: 0 0 auto;
+            img {
+                height: 180px;
+                width: auto;
+            }
+        }
+    }
+    &-title {
+        color: #fff;
+        padding: 20px 30px;
+        background-color: rgba(25, 28, 117, .9);
+        h2 {
+            margin: 0;
+            font-size: $primary-font-size + 8;
+            line-height: 28px;
+            padding-left: 0;
+            padding-bottom: 0;
+        }
+        span {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: $primary-font-size - 2;
+        }
+    }
+    &__meta {
+        padding: 24px;
+        &-item {
+            color: #202124;
+            font-weight: 500;
+            line-height: 25px;
+            font-size: $primary-font-size - 2;
+            margin-bottom: 8px;
+            .value {
+                color: #70757A;
+            }
+        }
+    }
+}

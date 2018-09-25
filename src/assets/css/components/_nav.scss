@@ -1,0 +1,30 @@
+.navbar {
+    list-style-type: none;
+    border-top: 1px solid #a04875;
+    background-color: #891952;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0,0,0,.23);
+    padding-left: 24px;
+        
+    a {
+        color: rgba(255, 255, 255, 0.7);
+        text-transform: uppercase;
+        padding: 15px 20px;
+        display: block;
+        font-size: $primary-font-size - 4;
+        border-bottom: 2px solid #891952;
+        transition: border .01s ease-in;
+    }
+
+    .activeLink {
+        color: #fff;
+        border-color:  #fff;
+    }
+    
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
